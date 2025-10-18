@@ -17,7 +17,7 @@ services:
     image: 2300030149/2300030149-exam-backend:latest
     container_name: springboot
     ports:
-      - "2025:3333"
+      - "8888:3333"
     depends_on:
       - mysqldb
     restart: on-failure
@@ -28,7 +28,7 @@ services:
     image: 2300030149/2300030149-exam-frontend:latest
     container_name: react
     ports:
-      - "2001:80"
+      - "6666:80"
     depends_on:
       - backend
     restart: on-failure
