@@ -27,7 +27,7 @@ services:
     image: 2300030149/exam-frontend:latest
     container_name: react
     ports:
-      - "6666:80"
+      - "4444:80"
     depends_on:
       - backend
     restart: on-failure
